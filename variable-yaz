@@ -1,0 +1,11 @@
+- name: test
+  hosts: all
+  gather_facts: no
+  tasks:
+  - name: bilgi
+    command: 'hostname'
+  - name:
+    file:
+      path: '/tmp/test/{{yaz}}'
+      state: touch
+      mode:  u=rw,g=r,o=r
