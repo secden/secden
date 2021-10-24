@@ -1,5 +1,6 @@
 - name: test
   hosts: all
+  gather_facts: false
   become: true
   vars:
     manala_proxmox_instances_defaults:
