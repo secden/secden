@@ -1,5 +1,4 @@
 ---
-
 - name: instances > Manage proxmox VE instances
   proxmox:
     api_host: "{{ item.api_host|default(manala_proxmox_instances_defaults.api_host) }}"
