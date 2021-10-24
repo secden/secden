@@ -22,4 +22,4 @@
         pool: db
         ostemplate: local:vztmpl/debian-8.0-manala_2.0.0_amd64.tar.gz	
   roles:
-    - ansible-role-proxmox-master
+    - manala.proxmox
