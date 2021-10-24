@@ -1,10 +1,10 @@
 ---
 
 # Install
-- import_tasks: install.yml
-  tags:
-    - manala_proxmox
-    - manala_proxmox.install
+#- import_tasks: install.yml
+#  tags:
+#    - manala_proxmox
+#    - manala_proxmox.install
 
 # Templates
 - import_tasks: templates.yml
