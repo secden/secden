@@ -1,0 +1,18 @@
+- name: test
+  hosts: all
+  become: true
+  vars:
+	manala_proxmox_instances:
+      - vmid: 101
+        hostname: mysql-1.local
+        cpus: 2
+        memory: 6144
+        swap: 512
+        disk: 30
+        netif: '{
+          "net0": "name=eth0,ip=192.168.0.1/24,gw=192.168.0.254,bridge=vmbr1"
+        }'
+        pool: db
+        ostemplate: local:vztmpl/debian-8.0-manala_2.0.0_amd64.tar.gz	
+  roles:
+    - manala.proxmox
