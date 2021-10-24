@@ -9,10 +9,10 @@
         node: hv-1
         password: root-password
     manala_proxmox_instances:
-      - vmid: 101
+      - vmid: 804
         hostname: mysql-1.local
         cpus: 2
-        memory: 6144
+        memory: 2048
         swap: 512
         disk: 30
         netif: '{
